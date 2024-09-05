@@ -5,7 +5,6 @@ html {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
-  background: #f8ef00;
 }
 
 .header {
@@ -57,8 +56,8 @@ nav ul li a {
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
   background: linear-gradient(
     to right,
-    #1c1c1c,
-    #242424 /* A medium dark gray for a subtle, balanced look */
+    #161616,
+    #1a1919 /* A medium dark gray for a subtle, balanced look */
   );
 }
 
@@ -170,6 +169,54 @@ nav ul li a {
   nav ul {
     font-size: 25px;
   }
+}
+
+/* css style for section 2*/
+
+.section-2 {
+  width: 100%; /* Set width to 100% for responsiveness */
+  max-width: 100%; /* Ensure the section does not exceed the viewport width */
+  margin: 0 auto; /* Center the section horizontally */
+  padding: 1em; /* Add some padding inside the section */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  background: linear-gradient(
+    to right,
+    #110d0d,
+    #0a0813 /* A medium dark gray for a subtle, balanced look */
+  );
+}
+.section2-container {
+  padding: 1rem;
+  color: rgb(236, 233, 228);
+  justify-content: center;
+  display: flex;
+  gap: 80px;
+}
+.section-2 h1 {
+  color: #cdcdc5;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  padding: 2.1rem;
+}
+
+.card1 img {
+  width: 100%; /* Full width of the card */
+  height: 60%; /* Height of the image relative to the card */
+  object-fit: cover; /* Ensure the image covers the card area */
+}
+
+.card1:hover {
+  opacity: 0.4; /* Set initial opacity */
+  transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.card1 h2 {
+  padding: 10px;
+  text-align: center;
+  background-color: #0a9786b0;
+  font-size: 14px;
+  box-shadow: #00a1ac;
 }
 
 @media (max-width: 768px) {
