@@ -1,0 +1,115 @@
+/* Basic reset and styling */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #212529;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between logo and navigation items */
+  padding: 10px 20px; /* Padding around the header */
+  background-color: #232323; /* Optional: Background color for the header */
+  flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
+}
+
+.header img {
+  max-width: 100px; /* Set a maximum width for the logo */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make the image circular */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 18px;
+  margin: 0;
+  display: flex; /* Arrange navigation items horizontally */
+  justify-content: flex-end; /* Align navigation items to the right */
+  flex-wrap: wrap; /* Prevent items from wrapping to the next line */
+}
+
+nav ul li {
+  margin-left: 20px; /* Space between navigation items */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(237, 228, 228); /* Navigation link color */
+  font-weight: bold; /* Optional: Make text bold */
+}
+
+/* Content Section 1 */
+
+.section1 {
+  width: 80em; /* Set a base width for larger screens */
+  max-width: 100%; /* Ensure the section does not exceed the viewport width */
+  margin: 0 auto; /* Center the section horizontally */
+  padding: 1em; /* Add some padding inside the section */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  background: linear-gradient(
+    to right,
+    #1c1c1c,
+    #242424 /* A medium dark gray for a subtle, balanced look */
+      /* A slightly darker gray for a smooth transition */
+  );
+}
+
+.container-section1 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 5rem;
+}
+.container-section1 img {
+  max-width: 250px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 8rem;
+  border-color: blue;
+  border: sienna solid;
+}
+
+.container-section1 .content p,
+h1,
+h4 {
+  color: aliceblue; /* change content color to white*/
+}
+
+/* Media Queries */
+@media (min-width: 1440px) {
+  nav ul {
+    font-size: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 10px; /* Adjust padding for smaller screens if needed */
+  }
+
+  .header img {
+    max-width: 80px; /* Adjust logo size for smaller screens */
+  }
+
+  nav ul {
+    margin: 0; /* Remove any extra margin if necessary */
+    padding: 0; /* Remove any extra padding if necessary */
+  }
+
+  nav ul li {
+    margin-left: 15px; /* Adjust space between navigation items */
+  }
+}
+
+@media (max-width: 480px) {
+  .header img {
+    max-width: 60px; /* Further reduce logo size for very small screens */
+  }
+
+  nav ul li {
+    margin-left: 10px; /* Further adjust space between navigation items */
+  }
+}
