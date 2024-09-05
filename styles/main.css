@@ -3,14 +3,15 @@ body,
 html {
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
-  background: #212529;
+  background: #f8ef00;
 }
 
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Space between logo and navigation items */
+  justify-content: space-between;
   padding: 10px 20px; /* Padding around the header */
   background-color: #232323; /* Optional: Background color for the header */
   flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
@@ -19,7 +20,12 @@ html {
 .header img {
   max-width: 100px; /* Set a maximum width for the logo */
   height: auto; /* Maintain aspect ratio */
-  border-radius: 50%; /* Make the image circular */
+}
+
+.container-section1:hover img {
+  background: #cdcdc5;
+  border: 10px solid #8bcf03; /* Border with color */
+  max-width: 230px;
 }
 
 nav ul {
@@ -29,7 +35,7 @@ nav ul {
   margin: 0;
   display: flex; /* Arrange navigation items horizontally */
   justify-content: flex-end; /* Align navigation items to the right */
-  flex-wrap: wrap; /* Prevent items from wrapping to the next line */
+  flex-wrap: nowrap; /* Prevent items from wrapping to the next line */
 }
 
 nav ul li {
@@ -43,9 +49,8 @@ nav ul li a {
 }
 
 /* Content Section 1 */
-
 .section1 {
-  width: 80em; /* Set a base width for larger screens */
+  width: 100%; /* Set width to 100% for responsiveness */
   max-width: 100%; /* Ensure the section does not exceed the viewport width */
   margin: 0 auto; /* Center the section horizontally */
   padding: 1em; /* Add some padding inside the section */
@@ -54,29 +59,110 @@ nav ul li a {
     to right,
     #1c1c1c,
     #242424 /* A medium dark gray for a subtle, balanced look */
-      /* A slightly darker gray for a smooth transition */
   );
 }
 
 .container-section1 {
   display: flex;
   justify-content: space-between;
-  position: relative;
-  padding: 5rem;
-}
-.container-section1 img {
-  max-width: 250px;
-  height: auto;
-  border-radius: 50%;
-  margin-right: 8rem;
-  border-color: blue;
-  border: sienna solid;
+  align-items: center; /* Center items vertically */
+  flex-wrap: nowrap; /* Keep items in a single row */
+  padding: 2rem;
+  overflow: hidden; /* Ensure no content spills out */
 }
 
-.container-section1 .content p,
-h1,
-h4 {
-  color: aliceblue; /* change content color to white*/
+.container-section1 img {
+  max-width: 230px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 2rem; /* Adjust spacing between image and text */
+  border: 10px solid #8bcf03; /* Border with color */
+}
+
+.content .greeting-span {
+  color: rgb(216, 216, 15);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.content .greeting-p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #8bcf03;
+  overflow: hidden; /* Ensures text is hidden until animated */
+  white-space: nowrap; /* Keeps text on one line */
+  border-right: 0.15em solid rgb(0, 102, 255); /* Creates a blinking cursor effect */
+  animation: typing 7s steps(30, end), blink-caret 0.75s both;
+}
+
+/* Animation for greetings */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+.content h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700; /* Bold for impact */
+  font-size: 2.5rem !important;
+  color: #fff !important;
+}
+
+.content h3 {
+  color: #6c757d !important;
+  font-weight: 700 !important;
+}
+
+.section1-p {
+  color: gainsboro; /* Change paragraph color to white */
+  margin-top: 40px;
+  margin-bottom: 1rem;
+}
+
+.location-span .icon {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: #00a1ac;
+}
+
+.icon {
+  display: inline-block; /* Ensure the icon is treated as a block-level element */
+  animation: spin 4s linear infinite; /* Apply the animation */
+}
+
+.location-text .char-color {
+  color: #38e208;
+  font-weight: 900;
+}
+
+.container-section1 .location-text {
+  color: gainsboro;
+  font-size: 1.1rem;
+  justify-content: space-around;
+}
+
+/* Icon animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Media Queries */
@@ -85,6 +171,7 @@ h4 {
     font-size: 25px;
   }
 }
+
 @media (max-width: 768px) {
   .header {
     padding: 10px; /* Adjust padding for smaller screens if needed */
@@ -102,14 +189,74 @@ h4 {
   nav ul li {
     margin-left: 15px; /* Adjust space between navigation items */
   }
+
+  .container-section1 {
+    padding: 1rem; /* Adjust padding */
+    flex-direction: row; /* Ensure items stay in a single row */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+  }
+
+  .container-section1 img {
+    max-width: 150px; /* Reduce image size on smaller screens */
+    margin-right: 1rem; /* Adjust spacing between image and text */
+  }
+
+  .content .greeting-span,
+  .content .greeting-p {
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
+  }
 }
 
 @media (max-width: 480px) {
   .header img {
     max-width: 60px; /* Further reduce logo size for very small screens */
   }
+  .content h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 300; /* Bold for impact */
+    font-size: 1rem !important;
+    color: #f90202 !important;
+  }
+  .content h3 {
+    color: #6c757d !important;
+    font-weight: 200 !important;
+    font-size: 0.6rem;
+  }
 
+  .section1-p {
+    color: gainsboro; /* Change paragraph color to white */
+    font-size: 0.5rem;
+    margin-top: 5px;
+  }
+  .location-text .char-color {
+    color: #38e208;
+    font-weight: 100;
+  }
+  .container-section1 .location-text {
+    color: gainsboro;
+    font-size: 0.7rem;
+  }
+  .location-span .icon {
+    font-size: 1.1rem;
+    color: #00a1ac;
+    margin-top: 0rem;
+  }
   nav ul li {
     margin-left: 10px; /* Further adjust space between navigation items */
+  }
+
+  .container-section1 {
+    padding: 0.5rem; /* Further adjust padding */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+  }
+
+  .container-section1 img {
+    max-width: 100px; /* Further reduce image size for very small screens */
+    margin-right: 0.5rem; /* Further adjust spacing between image and text */
+  }
+
+  .content .greeting-span,
+  .content .greeting-p {
+    font-size: 1rem; /* Further reduce font size for very small screens */
   }
 }
