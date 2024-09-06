@@ -40,6 +40,14 @@ nav ul {
 nav ul li {
   margin-left: 20px; /* Space between navigation items */
 }
+nav ul li {
+  padding: 10px 15px;
+  transition: transform 0.3s ease;
+}
+
+nav ul li:hover {
+  transform: scale(1.2); /* Scale up on hover */
+}
 
 nav ul li a {
   text-decoration: none;
@@ -161,6 +169,42 @@ nav ul li a {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+.scroll-down {
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.scroll-down img {
+  max-width: 60px;
+}
+/* Ensure the .scroll-down container spans both sections */
+.scroll-down {
+  position: absolute; /* Fix it in the viewport */
+  bottom: 20px; /* Adjust this value to control the vertical offset */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center the image */
+  z-index: 10; /* Make sure it's on top of other content */
+}
+
+.scroll-down img {
+  width: 50px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  animation: moveUpDown 2s ease-in-out infinite; /* Apply animation */
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-60px); /* Adjust movement distance */
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
