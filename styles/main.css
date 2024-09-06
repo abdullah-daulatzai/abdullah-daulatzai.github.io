@@ -445,3 +445,10 @@ textarea:hover {
     font-size: 1rem; /* Further reduce font size for very small screens */
   }
 }
+
+@media (max-width: 820px) {
+  .contact-container {
+    margin-top: 0;
+    gap: 15px;
+  }
+}
