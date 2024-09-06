@@ -338,6 +338,7 @@ textarea:hover {
   padding: 0.6rem;
   background-color: rgb(48, 43, 43);
   border: 0 !important;
+  color: rgb(255, 255, 255);
 }
 
 .m-input {
@@ -348,8 +349,22 @@ textarea:hover {
   padding: 0.6rem;
   background-color: rgb(48, 43, 43);
   border: 0 !important;
+  color: rgb(255, 255, 255);
 }
 
+.contact-button {
+  margin-top: 0.5rem;
+}
+.contact-button button {
+  background-color: #ffc107;
+  padding: 10px;
+  border: 1px solid chartreuse;
+  box-shadow: #fdfeff;
+}
+
+button:hover {
+  background-color: #0d8710;
+}
 /* Media Queries */
 @media (min-width: 1440px) {
   nav ul {
