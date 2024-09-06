@@ -164,13 +164,6 @@ nav ul li a {
   }
 }
 
-/* Media Queries */
-@media (min-width: 1440px) {
-  nav ul {
-    font-size: 25px;
-  }
-}
-
 /* css style for section 2*/
 .section-2 {
   width: 100%; /* Set width to 100% for responsiveness */
@@ -216,41 +209,6 @@ nav ul li a {
   background-color: #0a9786b0;
   font-size: 14px;
   box-shadow: #00a1ac;
-}
-
-@media (max-width: 768px) {
-  .header {
-    padding: 10px; /* Adjust padding for smaller screens if needed */
-  }
-
-  .header img {
-    max-width: 80px; /* Adjust logo size for smaller screens */
-  }
-
-  nav ul {
-    margin: 0; /* Remove any extra margin if necessary */
-    padding: 0; /* Remove any extra padding if necessary */
-  }
-
-  nav ul li {
-    margin-left: 15px; /* Adjust space between navigation items */
-  }
-
-  .container-section1 {
-    padding: 1rem; /* Adjust padding */
-    flex-direction: row; /* Ensure items stay in a single row */
-    overflow-x: auto; /* Allow horizontal scrolling if needed */
-  }
-
-  .container-section1 img {
-    max-width: 150px; /* Reduce image size on smaller screens */
-    margin-right: 1rem; /* Adjust spacing between image and text */
-  }
-
-  .content .greeting-span,
-  .content .greeting-p {
-    font-size: 1.5rem; /* Reduce font size for smaller screens */
-  }
 }
 
 /* css style for section 3*/
@@ -390,6 +348,48 @@ textarea:hover {
   padding: 0.6rem;
   background-color: rgb(48, 43, 43);
   border: 0 !important;
+}
+
+/* Media Queries */
+@media (min-width: 1440px) {
+  nav ul {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px; /* Adjust padding for smaller screens if needed */
+  }
+
+  .header img {
+    max-width: 80px; /* Adjust logo size for smaller screens */
+  }
+
+  nav ul {
+    margin: 0; /* Remove any extra margin if necessary */
+    padding: 0; /* Remove any extra padding if necessary */
+  }
+
+  nav ul li {
+    margin-left: 15px; /* Adjust space between navigation items */
+  }
+
+  .container-section1 {
+    padding: 1rem; /* Adjust padding */
+    flex-direction: row; /* Ensure items stay in a single row */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+  }
+
+  .container-section1 img {
+    max-width: 150px; /* Reduce image size on smaller screens */
+    margin-right: 1rem; /* Adjust spacing between image and text */
+  }
+
+  .content .greeting-span,
+  .content .greeting-p {
+    font-size: 1.5rem; /* Reduce font size for smaller screens */
+  }
 }
 
 @media (max-width: 480px) {
