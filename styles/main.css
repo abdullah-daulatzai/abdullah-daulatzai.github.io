@@ -253,7 +253,7 @@ nav ul li a {
   }
 }
 
-/* CSS style for section 3 */
+/* css style for section 3*/
 .contact {
   width: 100%; /* Set width to 100% for responsiveness */
   max-width: 100%; /* Ensure the section does not exceed the viewport width */
@@ -266,34 +266,31 @@ nav ul li a {
     #0a0813 /* A medium dark gray for a subtle, balanced look */
   );
 }
-
 .contact h1 {
+  justify-content: center;
   text-align: center;
   color: #ffffff;
 }
-
 .contact-container {
   padding: 1rem;
   display: flex;
-  flex-direction: column; /* Stack items vertically on small screens */
+  flex-wrap: wrap;
+  gap: 250px;
 }
 
 .contact-content {
   display: flex;
   flex-direction: column;
 }
-
 .content-section3 {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
   gap: 15px;
 }
-
 .content-section3 h3 {
   padding: 0.6rem;
   color: #ebebe7;
-  font-weight: 800;
+  font-weight: 800px;
 }
 
 .content-section3 .fas {
@@ -301,55 +298,44 @@ nav ul li a {
   color: #e2a407e5;
   font-size: 1.5rem;
 }
-
 .content-section3 input {
-  width: 100%; /* Adjust input width for responsiveness */
-  padding: 0.5rem;
-  max-height: none; /* Remove max-height limitation */
+  width: 50%;
+  max-height: 20%;
 }
-
 .content-section3 p {
   display: block;
   color: #6c757d !important;
-  margin-top: 1rem;
+  margin-top: 4rem;
+  margin-left: -4.9rem;
 }
-
 .icons {
   padding-top: 1.6rem;
   display: flex;
   gap: 20px;
 }
-
 .fab:hover {
   font-size: 40px;
   background-color: transparent;
 }
-
 .fa-facebook {
   color: #4267b2;
   font-size: 25px;
 }
-
 .fa-twitter {
   color: #1da1f2;
   font-size: 25px;
 }
-
 .fa-instagram {
   color: #c13584;
   font-size: 25px;
 }
-
 .fa-linkedin {
   color: #0e76a8;
   font-size: 25px;
 }
-
 .rowme {
   display: flex;
-  flex-direction: column; /* Stack items vertically on small screens */
 }
-
 .rowme h1 {
   color: white;
 }
@@ -362,57 +348,48 @@ nav ul li a {
 
 .f-input input {
   width: 100%;
-  padding: 0.5rem;
-  background-color: rgb(108, 73, 2);
+  padding: 0.6rem;
+  background-color: rgb(48, 43, 43);
   border: 0 !important;
   color: rgb(255, 255, 255);
 }
-
 .email-input input {
   width: 100%;
-  padding: 0.5rem;
-  background-color: rgb(108, 73, 2);
+  padding: 0.6rem;
+  background-color: rgb(48, 43, 43);
   border: 0 !important;
   color: rgb(255, 255, 255);
 }
-
-.f-input input:hover {
-  background-color: rgb(37, 186, 245);
+input:hover {
+  padding: 0.6rem;
+  background-color: rgb(33, 32, 32);
+  opacity: 0.4; /* 20% opaque */
+}
+textarea:hover {
+  padding: 0.6rem;
+  background-color: rgb(33, 32, 32);
+  opacity: 0.4; /* 20% opaque */
 }
 
 .subject-input {
   margin-top: 1.5rem;
 }
-
 .subject-input input {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.6rem;
+  padding: 0.6rem;
+  background-color: rgb(48, 43, 43);
+  border: 0 !important;
 }
 
 .m-input {
   margin-top: 1.5rem;
 }
-
 .m-input textarea {
   width: 100%;
-  padding: 0.5rem;
-}
-
-/* Responsive Design Adjustments */
-@media (max-width: 768px) {
-  .contact-container {
-    padding: 0.5rem;
-  }
-
-  .content-section3 {
-    flex-direction: column; /* Stack items vertically on small screens */
-    gap: 10px;
-  }
-
-  .icons {
-    flex-direction: column; /* Stack icons vertically on small screens */
-    gap: 10px;
-  }
+  padding: 0.6rem;
+  background-color: rgb(48, 43, 43);
+  border: 0 !important;
 }
 
 @media (max-width: 480px) {
