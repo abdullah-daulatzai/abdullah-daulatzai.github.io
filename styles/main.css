@@ -417,14 +417,14 @@ nav ul li a {
   margin-top: 0.7rem;
 }
 .contact-button button {
-  background-color: #ffc107;
+  background-color: #8f6e00;
   padding: 10px;
-  border: 1px solid chartreuse;
+  border: 1px solid rgb(13, 222, 197);
   box-shadow: #fdfeff;
 }
 
 button:hover {
-  background-color: #e7e169;
+  background-color: #22676d;
 }
 
 /* footer */
@@ -536,7 +536,6 @@ button:hover {
     font-family: 'Playfair Display', serif;
     font-weight: 300; /* Bold for impact */
     font-size: 1rem !important;
-    color: #f90202 !important;
   }
   .content h3 {
     color: #6c757d !important;
@@ -561,6 +560,12 @@ button:hover {
     font-size: 1.1rem;
     color: #00a1ac;
     margin-top: 0rem;
+  }
+  .blog-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   nav ul li {
     margin-left: 10px; /* Further adjust space between navigation items */
