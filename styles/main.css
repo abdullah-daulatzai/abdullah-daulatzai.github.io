@@ -478,7 +478,7 @@ button:hover {
 
 .blog-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 .published h3 {
@@ -528,8 +528,8 @@ button:hover {
 }
 
 .box1 h1 {
-  width: 100%; /* Set width to 100% for responsiveness */
-  max-width: 100%; /* Ensure the section does not exceed the viewport width */
+  width: 50%; /* Set width to 100% for responsiveness */
+  max-width: 50%; /* Ensure the section does not exceed the viewport width */
   background: #4f4f4f; /* Slightly different background for the header */
   padding: 10px 200px 10px 0; /* Add some padding */
   font-size: 15px;
