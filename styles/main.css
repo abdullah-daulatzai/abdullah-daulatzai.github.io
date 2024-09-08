@@ -449,7 +449,7 @@ button:hover {
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
   background: linear-gradient(
     to right,
-    #3d3c3c,
+    #151f26,
     #1a1919 /* A medium dark gray for a subtle, balanced look */
   );
 }
@@ -467,6 +467,20 @@ button:hover {
 }
 .published h3 {
   color: #e5e8e8;
+}
+
+.box1 h1 {
+  width: 30%; /* Set width to 100% for responsiveness */
+  max-width: 30%; /* Ensure the section does not exceed the viewport width */
+  background: #12191f; /* Slightly different background for the header */
+  padding: 10px 100px 10px 0; /* Add some padding */
+  font-size: 15px;
+  color: aliceblue;
+  border-radius: 5px; /* Rounded corners for the header */
+  box-shadow: 2px 4px rgba(234, 247, 4, 0.765); /* Subtle shadow for the header */
+}
+.box1 a {
+  text-decoration: none;
 }
 
 /* Media Queries */
@@ -509,17 +523,6 @@ button:hover {
   .content .greeting-p {
     font-size: 1.5rem; /* Reduce font size for smaller screens */
   }
-}
-
-.box1 h1 {
-  width: 40%; /* Set width to 100% for responsiveness */
-  max-width: 40%; /* Ensure the section does not exceed the viewport width */
-  background: #4f4f4f; /* Slightly different background for the header */
-  padding: 10px 200px 10px 0; /* Add some padding */
-  font-size: 15px;
-  color: aliceblue;
-  border-radius: 5px; /* Rounded corners for the header */
-  box-shadow: 2px 4px rgba(234, 247, 4, 0.765); /* Subtle shadow for the header */
 }
 
 @media (max-width: 480px) {
@@ -595,6 +598,9 @@ button:hover {
     margin-top: 4rem;
     margin-left: -4.9rem;
     font-size: 12px;
+  }
+  .box1 h1 {
+    font-size: 10px;
   }
 }
 
