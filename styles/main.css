@@ -479,6 +479,9 @@ button:hover {
   border-radius: 5px; /* Rounded corners for the header */
   box-shadow: 2px 4px rgba(234, 247, 4, 0.765); /* Subtle shadow for the header */
 }
+.box1 h1:hover {
+  background: #384e61;
+}
 .box1 a {
   text-decoration: none;
 }
