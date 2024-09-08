@@ -230,9 +230,7 @@ nav ul li a {
 }
 .section-2 h1 {
   color: rgb(255, 248, 248);
-  justify-content: center;
   text-align: center;
-  align-content: center;
   padding: 2.1rem;
 }
 
@@ -458,6 +456,35 @@ button:hover {
   color: #d7ded5;
 }
 
+/* Blog Section */
+.blog-section {
+  width: 100%; /* Set width to 100% for responsiveness */
+  max-width: 100%; /* Ensure the section does not exceed the viewport width */
+  margin: 0 auto; /* Center the section horizontally */
+  padding: 1em; /* Add some padding inside the section */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  background: linear-gradient(
+    to right,
+    #3d3c3c,
+    #1a1919 /* A medium dark gray for a subtle, balanced look */
+  );
+}
+
+.blog-section h1 {
+  color: white;
+  text-align: center;
+  padding: 2.1rem;
+}
+
+.blog-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.published h3 {
+  color: #e5e8e8;
+}
+
 /* Media Queries */
 @media (min-width: 1440px) {
   nav ul {
@@ -498,6 +525,17 @@ button:hover {
   .content .greeting-p {
     font-size: 1.5rem; /* Reduce font size for smaller screens */
   }
+}
+
+.box1 h1 {
+  width: 100%; /* Set width to 100% for responsiveness */
+  max-width: 100%; /* Ensure the section does not exceed the viewport width */
+  background: #4f4f4f; /* Slightly different background for the header */
+  padding: 10px 200px 10px 0; /* Add some padding */
+  font-size: 15px;
+  color: aliceblue;
+  border-radius: 5px; /* Rounded corners for the header */
+  box-shadow: 2px 4px rgba(234, 247, 4, 0.765); /* Subtle shadow for the header */
 }
 
 @media (max-width: 480px) {
