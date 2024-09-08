@@ -1,0 +1,332 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  background-color: #191a19;
+  height: 100%; /* Full viewport height */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+.main-content {
+  flex: 1;
+}
+
+.container-section1 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #201d1d; /* Dark background for contrast */
+  border-radius: 2px; /* Rounded corners for the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Soft shadow */
+  max-width: 800px; /* Set a max-width for content */
+  margin: 0 auto; /* Center the container horizontally */
+  overflow: hidden; /* Hide overflow to ensure content stays within bounds */
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  background: linear-gradient(to right, #162426, #051f1b);
+  color: #d7ded5;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #232323;
+  flex-wrap: nowrap;
+}
+
+.header img {
+  max-width: 100px;
+  height: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 18px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li {
+  padding: 10px 15px;
+  transition: transform 0.3s ease;
+}
+
+nav ul li:hover {
+  transform: scale(1.2);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(237, 228, 228);
+  font-weight: bold;
+}
+
+.position-absolute {
+  color: #8bcf03;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+p {
+  margin: 0; /* Reset default margin */
+  text-align: center;
+  overflow: hidden; /* Ensure content doesn’t overflow */
+}
+
+.container-section1 h2 {
+  width: 100%; /* Set width to 100% for responsiveness */
+  max-width: 100%; /* Ensure the section does not exceed the viewport width */
+  margin: 0 auto; /* Center the section horizontally */
+  background: #1b1a1a; /* Slightly different background for the header */
+  padding: 10px 20px; /* Add some padding */
+  font-size: 20px;
+  color: aliceblue;
+  border-radius: 5px; /* Rounded corners for the header */
+  box-shadow: 0 2px 4px rgb(234, 230, 0); /* Subtle shadow for the header */
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap; /* Keep items in a single row */
+  padding: 1rem;
+  overflow: hidden; /* Ensure no content spills out */
+}
+
+.content {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.content p {
+  text-align: left; /* or right, center, justify */
+  color: #a5a5a5;
+  font-size: 13px;
+}
+
+.p-relative {
+  color: #c4cbbc;
+  font-weight: 700px;
+  font-size: 15px;
+}
+
+.position1 {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: rgb(95, 148, 141);
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  /* Initial position without any offset */
+}
+.box-move {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  top: 20px; /* Move the element 20px down */
+  left: 30px; /* Move the element 30px to the right */
+}
+
+.arrow-img {
+  display: flex;
+}
+.arrow-img I {
+  font-size: 50px;
+  margin-top: 5rem;
+
+  color: #b8b620;
+}
+
+.arrow-img h4 {
+  color: #c4cbbc;
+  font: 18px;
+  margin: 8rem 0 0 1rem;
+}
+
+.wall-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.wall {
+  position: relative;
+  width: 350px;
+  height: 250px;
+  background-color: rgb(95, 148, 141);
+  border: 1px solid #f2efef;
+}
+
+.poster {
+  position: relative;
+  width: 250px;
+  height: 150px;
+  background-color: lightblue;
+  border: 2px solid #000;
+  margin: 50px; /* just for better positioning within the wall */
+}
+
+.sticker {
+  position: absolute;
+  top: 60px; /* 5 inches from the top of the poster */
+  left: 90px; /* 10 inches from the left of the poster */
+  background-color: coral;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.stop {
+  margin-top: 1rem;
+}
+.box-stop {
+  position: fixed;
+  top: 500px; /* 5 inches from the top of the poster */
+  left: 200px; /* 10 inches from the left of the poster */
+  background-color: rgb(232, 10, 10);
+  padding: 30px;
+  border: 1px solid #000;
+}
+/* Media Queries */
+@media (min-width: 1440px) {
+  nav ul {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+
+  .header img {
+    max-width: 80px;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin-left: 15px;
+  }
+
+  .container-section1 {
+    padding: 1rem;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .container-section1 img {
+    max-width: 150px;
+    margin-right: 1rem;
+  }
+
+  .content .greeting-span,
+  .content .greeting-p {
+    font-size: 1.5rem;
+  }
+
+  .box-stop {
+    position: fixed;
+    top: 590px; /* 5 inches from the top of the poster */
+    left: -30px; /* 10 inches from the left of the poster */
+  }
+}
+
+@media (min-width: 425px) {
+  nav ul {
+    font-size: 12px;
+  }
+  .container-section1 h2 {
+    font-size: 13px;
+  }
+  .content p {
+    font-size: 10px;
+  }
+
+  .arrow-img i {
+    font-size: 20px;
+  }
+  .arrow-img h4 {
+    font-size: 12px;
+    margin-top: 100px;
+  }
+  .container {
+    width: 150px;
+    height: 100px;
+  }
+  .container .box {
+    width: 50px;
+    height: 50px;
+  }
+  .box {
+    font-size: 10px;
+  }
+  .wall {
+    width: 240px;
+    height: 180px;
+  }
+  .poster {
+    width: 150px;
+    height: 100px;
+  }
+  .sticker {
+    padding: 10px;
+    top: 35px;
+    left: 35px;
+  }
+  .box-stop {
+    position: fixed;
+    top: 400px; /* 5 inches from the top of the poster */
+    left: 0; /* 10 inches from the left of the poster */
+    width: 7px;
+    height: 5px;
+  }
+  .box-stop {
+    font-size: 8px;
+  }
+  .box-stop .font-z {
+    font-size: 0px;
+  }
+
+  .footer p {
+    font-size: 10px;
+  }
+}
