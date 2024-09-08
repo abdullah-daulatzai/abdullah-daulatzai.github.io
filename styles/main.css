@@ -528,8 +528,8 @@ button:hover {
 }
 
 .box1 h1 {
-  width: 50%; /* Set width to 100% for responsiveness */
-  max-width: 50%; /* Ensure the section does not exceed the viewport width */
+  width: 40%; /* Set width to 100% for responsiveness */
+  max-width: 40%; /* Ensure the section does not exceed the viewport width */
   background: #4f4f4f; /* Slightly different background for the header */
   padding: 10px 200px 10px 0; /* Add some padding */
   font-size: 15px;
