@@ -141,26 +141,27 @@ p {
 }
 .container {
   position: relative;
-  width: 300px;
-  height: 200px;
+  width: 200px;
+  height: 150px;
   background-color: rgb(95, 148, 141);
   border: 1px solid #ccc;
   padding: 20px;
 }
 .box {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 50px;
   background-color: coral;
-  /* Initial position without any offset */
+  font-size: 10px;
 }
 .box-move {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 50px;
   background-color: lightblue;
-  top: 20px; /* Move the element 20px down */
-  left: 30px; /* Move the element 30px to the right */
+  top: 20px;
+  left: 30px;
+  font-size: 10px;
 }
 
 .arrow-img {
@@ -187,27 +188,28 @@ p {
 }
 .wall {
   position: relative;
-  width: 350px;
-  height: 250px;
+  width: 250px;
+  height: 200px;
   background-color: rgb(95, 148, 141);
   border: 1px solid #f2efef;
 }
 
 .poster {
   position: relative;
-  width: 250px;
-  height: 150px;
+  width: 150px;
+  height: 100px;
   background-color: lightblue;
   border: 2px solid #000;
-  margin: 50px; /* just for better positioning within the wall */
+
+  margin: 50px 30px 30px 40px; /* just for better positioning within the wall */
 }
 
 .sticker {
   position: absolute;
-  top: 60px; /* 5 inches from the top of the poster */
-  left: 90px; /* 10 inches from the left of the poster */
+  top: 30px; /* 5 inches from the top of the poster */
+  left: 40px; /* 10 inches from the left of the poster */
   background-color: coral;
-  padding: 10px;
+  padding: 7px;
   border: 1px solid #000;
 }
 
@@ -270,7 +272,7 @@ p {
   }
 }
 
-@media (min-width: 425px) {
+@media (max-width: 425px) {
   nav ul {
     font-size: 12px;
   }
