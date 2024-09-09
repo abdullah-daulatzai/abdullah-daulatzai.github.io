@@ -419,7 +419,7 @@ nav ul li a {
 .contact-button button {
   background-color: #8f6e00;
   padding: 10px;
-  border: 1px solid rgb(13, 222, 197);
+  border: 1px solid rgb(200, 212, 211);
   box-shadow: #fdfeff;
 }
 
@@ -473,7 +473,7 @@ button:hover {
   width: 30%; /* Set width to 100% for responsiveness */
   max-width: 30%; /* Ensure the section does not exceed the viewport width */
   background: #12191f; /* Slightly different background for the header */
-  padding: 10px 100px 10px 0; /* Add some padding */
+  padding: 5px 100px 5px 0; /* Add some padding */
   font-size: 15px;
   color: aliceblue;
   border-radius: 5px; /* Rounded corners for the header */
