@@ -270,6 +270,7 @@ nav ul li a {
   display: flex;
   flex-wrap: wrap;
   gap: 250px;
+  justify-content: center;
 }
 
 .contact-content {
@@ -461,19 +462,18 @@ button:hover {
 }
 
 .blog-container {
+  padding: 1rem;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.published h3 {
-  color: #e5e8e8;
+  flex-wrap: wrap;
+  gap: 250px;
+  justify-content: center;
+  align-items: center;
 }
 
 .box1 h1 {
-  width: 30%; /* Set width to 100% for responsiveness */
-  max-width: 30%; /* Ensure the section does not exceed the viewport width */
+  max-width: 100%; /* Ensure the section does not exceed the viewport width */
   background: #12191f; /* Slightly different background for the header */
-  padding: 5px 100px 5px 0; /* Add some padding */
+  padding: 5px 300px 5px 0; /* Add some padding */
   font-size: 15px;
   color: aliceblue;
   border-radius: 5px; /* Rounded corners for the header */
@@ -543,6 +543,24 @@ button:hover {
     font-size: 0.6rem;
   }
 
+  .blog-container {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box1 h1 {
+    max-width: 100%; /* Ensure the section does not exceed the viewport width */
+    background: #12191f; /* Slightly different background for the header */
+    padding: 5px 200px 5px 0; /* Add some padding */
+    font-size: 15px;
+    color: aliceblue;
+    border-radius: 5px; /* Rounded corners for the header */
+    box-shadow: 2px 4px rgba(234, 247, 4, 0.765); /* Subtle shadow for the header */
+  }
   .section1-p {
     color: gainsboro; /* Change paragraph color to white */
     font-size: 0.5rem;
@@ -625,6 +643,14 @@ button:hover {
   }
   button {
     margin-top: 10px;
+  }
+  .blog-container {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (max-width: 430px) {
