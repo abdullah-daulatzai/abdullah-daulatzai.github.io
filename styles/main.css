@@ -605,6 +605,10 @@ button:hover {
   }
 }
 
+ol li {
+  color: white;
+}
+
 @media (max-width: 820px) {
   .contact-container {
     margin-top: 0;

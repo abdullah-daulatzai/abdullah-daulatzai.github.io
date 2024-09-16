@@ -224,6 +224,19 @@ p {
   padding: 30px;
   border: 1px solid #000;
 }
+ol li {
+  color: #c4cbbc;
+  font-size: 13px;
+  padding-top: 5px;
+}
+
+.gMindset img {
+  position: relative;
+  max-width: 35%;
+  top: 90%;
+  left: 30%;
+}
+
 /* Media Queries */
 @media (min-width: 1440px) {
   nav ul {
