@@ -465,7 +465,7 @@ button:hover {
   padding: 1rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 250px;
+  gap: 100px;
   justify-content: center;
   align-items: center;
 }
@@ -478,6 +478,9 @@ button:hover {
   color: aliceblue;
   border-radius: 5px; /* Rounded corners for the header */
   box-shadow: 2px 4px rgba(234, 247, 4, 0.765); /* Subtle shadow for the header */
+}
+.box1 h1 {
+  text-align: left;
 }
 .box1 h1:hover {
   background: #384e61;
